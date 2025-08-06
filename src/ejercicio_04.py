@@ -5,14 +5,14 @@ def carrito_de_compras():
 
     # Menú interactivo dentro de un ciclo while
     while True:
-        print("\n--- Menú del Carrito de Compras ---")
+        print("\n--- Menu del Carrito de Compras ---")
         print("1. Agregar producto")
         print("2. Eliminar producto")
         print("3. Mostrar productos")
         print("4. Calcular total")
         print("5. Salir")
 
-        opcion = input("Selecciona una opción (1-5): ")
+        opcion = input("Selecciona una opcion (1-5): ")
 
         # Opción 1: Agregar producto al carrito
         if opcion == '1':
@@ -43,7 +43,7 @@ def carrito_de_compras():
         # Opción 3: Mostrar productos en el carrito
         elif opcion == '3':
             if not carrito:
-                print(" El carrito está vacío.")
+                print(" El carrito está vacio.")
             else:
                 print("\n Productos en el carrito:")
                 for idx, producto in enumerate(carrito, start=1):
@@ -61,7 +61,7 @@ def carrito_de_compras():
 
         # Opción inválida
         else:
-            print(" Opción no válida. Por favor, elige entre 1 y 5.")
+            print(" Opcion no válida. Por favor, elige entre 1 y 5.")
 
 # Llamamos a la función para ejecutar el carrito
 carrito_de_compras()
